@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+
+		'use strict';
+
+		function numbersAddingUp(a, b) {
+			return a + b;
+		}
+		function numbersDeducting(a, b) {
+			return a - b;
+		}
+		function numbersDividing(a, b) {
+			return a / b;
+		}
+		function numbersMultiplying(a, b) {
+			return a * b;
+		}
+
+		function mathOperation(arg1, arg2, operation) {
+			switch (operation) {
+				case "addingUp":
+					return numbersAddingUp(arg1, arg2);
+				case "deducting":
+					return numbersDeducting(arg1, arg2);
+				case "dividing":
+					return numbersDividing(arg1, arg2);
+				case "multiplying":
+					return numbersMultiplying(arg1, arg2);
+			}
+		}
+
+		let addingUp = mathOperation(5, 10, "addingUp")
+		alert(addingUp);
+
+		let deducting = mathOperation(40, 1, "deducting")
+		alert(deducting);
+
+		let dividing = mathOperation(10, 2, "dividing")
+		alert(dividing);
+
+		let multiplying = mathOperation(6, 6, "multiplying")
+		alert(multiplying);
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	var zagadka1 =
+	[
+		["Два конца, два кольца, а посередине гвоздик"],
+	 	["ножницы", "ножнички"]
+	];
+	var zagadka2 =
+	[
+		["Не огонь, а жжется"],
+		["крапива", "укус"]
+	];
+	var zagadka3 = 
+	[
+		["Жидкое, а не вода, белое, а не снег"],
+		["молоко", "кефир"]
+	];
+
+	var rightAnswerHowMany = 0;
+
+	function gameStart(zagadka)
+	{
+		var userAnswer = prompt(zagadka[0]).toLowerCase();
+	
+			if (userAnswer == zagadka[1][0] || userAnswer == zagadka[1][1].toLowerCase())
+		{
+			rightAnswerHowMany++;
+			alert("Вы угадали!");
+		}
+			else 
+		{
+			alert("Неправильный ответ");
+		}
+		}
+
+	gameStart(zagadka1)
+	gameStart(zagadka2)
+	gameStart(zagadka3)
+
+	alert("Игра окончена. Количество правильных ответов: " + rightAnswerHowMany);
+
+</script>

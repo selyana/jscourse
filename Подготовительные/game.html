@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+var answer = parseInt(Math.random() * 100);
+var player = 1;
+alert("Если захотите выйти из игры, напечатайте esc в поле ответа");
+
+while (true) 
+{
+  var userAnswer = prompt("Угадайте число от 0 до 100. Ходит игрок " + player +".").toLowerCase();
+  if (userAnswer == "esc")
+  {
+    break;
+  } 
+  if (userAnswer > answer) 
+  { 
+    alert("Ваше число больше загаданного");
+  } 
+  else if (userAnswer < answer) 
+  {
+    alert("Ваше число меньше загаданного");
+  } 
+  else if (userAnswer == answer) 
+  {
+    alert("Вы угадали!");
+    break;
+  }
+
+  if(player == 1)
+  {
+    player = 2;
+  } 
+  else 
+  {
+    player = 1;
+  }
+ }
+
+</script>

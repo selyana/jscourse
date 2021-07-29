@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+var massive1 = [1, 2, 0, 120];
+
+function uploadArray(numbers) 
+{
+	var min = numbers[0];
+	for(var i = 0; i < numbers.length; i++)
+	{
+		if (min > numbers[i])
+		min = numbers[i];
+	}
+	return min;
+}
+var n = uploadArray(massive1);
+alert(n);
+</script> 

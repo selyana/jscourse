@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	var money = +prompt("Введите сумму вклада");
+	var percentage = +prompt("Введите процент, который будет начисляться ежегодно");
+
+	for (var i = 1; i <= 5; i++) 
+	{
+		var incomeEachYear = ((money / 100) * percentage)
+		money = money + incomeEachYear
+		alert("Размер вклада через " +i+ " год(а) / лет: " + money.toFixed(2));
+	}
+
+</script>
